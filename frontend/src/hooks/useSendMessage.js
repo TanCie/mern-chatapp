@@ -18,7 +18,7 @@ const useSendMessage = () => {
       })
       const data = await res.json();
       if (data.error) {
-        throw new Error(data.error);
+        throw new Error("Error hereee");
       }
       setMessages([...messages, data]);
 
