@@ -13,7 +13,7 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authuser) {
-      const newSocket = io("http://localhost:5000", {
+      const newSocket = io("https://tancie-chatapp.onrender.com", {
         query: {
           userId: authuser._id,
         },
